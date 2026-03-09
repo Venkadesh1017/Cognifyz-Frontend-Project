@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cognifyz Internship – Frontend Development</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cogni<span>fyz</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#heroSection">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#responsiveSection">Responsive</a></li>
+          <li class="nav-item"><a class="nav-link" href="#colorSection">Interactive</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apiSection">API</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formSection">Form</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO: Task 1 + Task 2 -->
+  <section class="hero section" id="heroSection">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="hero-eyebrow">
+            <div class="dot"></div>
+            <span>Cognifyz Technologies — Frontend Internship</span>
+          </div>
+          <h1 class="hero-heading">
+            Build. Style.<br/>
+            <span class="gradient-text">Ship the Web.</span>
+          </h1>
+          <p class="hero-desc">
+            A complete front-end internship project showcasing HTML, CSS, JavaScript,
+            responsive design, API integration, form validation, Bootstrap, and Sass concepts.
+          </p>
+          <div class="hero-btns">
+            <a href="#colorSection" class="btn-primary-custom">Try Interactive Demo →</a>
+            <a href="#apiSection" class="btn-ghost">Explore API Data</a>
+          </div>
+
+          <!-- Task 2: Inline CSS Code Display -->
+          <div class="inline-css-demo" style="margin-top:40px;">
+            <span class="code-comment">&lt;!-- Task 2: Inline CSS --&gt;</span><br/>
+            <span class="code-tag">&lt;h2 </span>
+            <span class="code-attr">style=</span>
+            <span class="code-val">"color:#5b6ef5; font-size:28px;"</span>
+            <span class="code-tag">&gt;</span>
+            <span class="code-text">Hello, Cognifyz!</span>
+            <span class="code-tag">&lt;/h2&gt;</span>
+          </div>
+
+          <!-- Task 2: Actual Inline CSS Render -->
+          <div style="margin-top:16px; padding:20px 24px; background:rgba(91,110,245,0.06); border-radius:10px; border:1px solid rgba(91,110,245,0.15);">
+            <h2 style="color:#5b6ef5; font-size:28px; font-weight:800; font-family:'Syne',sans-serif;">Hello, Cognifyz! 👋</h2>
+            <p style="color:#5bf5c3; background:rgba(91,245,195,0.1); padding:8px 14px; border-radius:6px; display:inline-block; margin-top:10px; font-size:14px;">
+              Styled with inline CSS — font-color, background &amp; padding.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-5 mt-5 mt-lg-0">
+          <!-- Task 1: Image -->
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
+            alt="Frontend Development Code"
+            class="hero-img"
+          />
+          <div class="hero-stats">
+            <div class="stat-card"><div class="stat-number">8</div><div class="stat-label">Tasks Built</div></div>
+            <div class="stat-card"><div class="stat-number">4</div><div class="stat-label">Skill Levels</div></div>
+            <div class="stat-card"><div class="stat-number">100%</div><div class="stat-label">Complete</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Task 3: Responsive -->
+  <section class="section" id="responsiveSection" style="background:var(--clr-surface);">
+    <div class="container">
+      <div class="reveal">
+        <span class="badge-task">Task 3</span>
+        <div class="section-label">Responsive Design</div>
+        <h2 class="section-title">Adapts to <em>every</em> screen.</h2>
+        <p class="section-desc">Resize your browser to see media queries in action.</p>
+        <div style="margin-bottom:28px;">
+          <span class="breakpoint-badge sm">📱 Mobile</span>
+          <span class="breakpoint-badge md">📱 Small Tablet</span>
+          <span class="breakpoint-badge lg">💻 Tablet</span>
+          <span class="breakpoint-badge xl">🖥 Laptop</span>
+        </div>
+      </div>
+      <div class="responsive-grid reveal">
+        <div class="feature-card"><div class="feature-icon">📐</div><div class="feature-title">Fluid Grid</div><div class="feature-desc">CSS Grid reflows from 3 → 2 → 1 columns as screen shrinks.</div></div>
+        <div class="feature-card"><div class="feature-icon">🔤</div><div class="feature-title">Fluid Typography</div><div class="feature-desc">Headings use <code>clamp()</code> to scale between min and max sizes.</div></div>
+        <div class="feature-card"><div class="feature-icon">🖼</div><div class="feature-title">Responsive Images</div><div class="feature-desc">Images use <code>max-width:100%</code> to fit any container.</div></div>
+        <div class="feature-card"><div class="feature-icon">📲</div><div class="feature-title">Mobile Nav</div><div class="feature-desc">Bootstrap navbar collapses to hamburger on mobile.</div></div>
+        <div class="feature-card"><div class="feature-icon">🎨</div><div class="feature-title">Adaptive Spacing</div><div class="feature-desc">Padding and margins shrink on mobile via media queries.</div></div>
+        <div class="feature-card"><div class="feature-icon">⚡</div><div class="feature-title">Performance</div><div class="feature-desc">GPU-accelerated <code>transform</code> for smooth 60fps animations.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Task 4: Interactive Button -->
+  <section class="section" id="colorSection">
+    <div class="container">
+      <div class="reveal">
+        <span class="badge-task">Task 4</span>
+        <div class="section-label">Interactive Button</div>
+        <h2 class="section-title">Click to <span style="color:var(--clr-accent);">transform.</span></h2>
+        <p class="section-desc">JavaScript updates the background color on every click.</p>
+      </div>
+      <div class="color-stage reveal" id="colorStage">
+        <h3 class="color-stage-title">Background Color Lab</h3>
+        <p class="color-stage-sub">Current color: <span id="colorDisplay">#0a0a0f</span></p>
+        <button class="btn-color-change" onclick="changeColorRandom()">🎨 Change Color Randomly</button>
+        <div class="color-swatches">
+          <div class="swatch" style="background:#5b6ef5;" onclick="applyColor('#5b6ef5',this)"></div>
+          <div class="swatch" style="background:#f5a45b;" onclick="applyColor('#f5a45b',this)"></div>
+          <div class="swatch" style="background:#5bf5c3;" onclick="applyColor('#5bf5c3',this)"></div>
+          <div class="swatch" style="background:#f55b9a;" onclick="applyColor('#f55b9a',this)"></div>
+          <div class="swatch" style="background:#f5f55b;" onclick="applyColor('#f5f55b',this)"></div>
+          <div class="swatch" style="background:#5bf55b;" onclick="applyColor('#5bf55b',this)"></div>
+          <div class="swatch" style="background:#c45bf5;" onclick="applyColor('#c45bf5',this)"></div>
+          <div class="swatch" style="background:#f55b5b;" onclick="applyColor('#f55b5b',this)"></div>
+        </div>
+        <div id="clickCount" class="click-count">Clicks: 0</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Task 5: API Integration -->
+  <section class="section" id="apiSection">
+    <div class="container">
+      <div class="reveal">
+        <span class="badge-task">Task 5</span>
+        <div class="section-label">API Integration</div>
+        <h2 class="section-title">Live data from <span style="color:var(--clr-accent3);">JSONPlaceholder.</span></h2>
+        <p class="section-desc">fetch() pulls real data from a public REST API and renders it into the DOM.</p>
+      </div>
+      <div class="api-controls reveal">
+        <select class="api-select" id="apiEndpoint" onchange="loadApiData()">
+          <option value="posts">📝 Posts</option>
+          <option value="users">👤 Users</option>
+          <option value="todos">✅ Todos</option>
+          <option value="comments">💬 Comments</option>
+        </select>
+        <select class="api-select" id="apiLimit" style="max-width:160px;" onchange="loadApiData()">
+          <option value="6">Show 6</option>
+          <option value="9">Show 9</option>
+          <option value="12">Show 12</option>
+        </select>
+        <button class="btn-primary-custom" onclick="loadApiData()">↻ Reload</button>
+      </div>
+      <div id="apiContainer" class="reveal"></div>
+    </div>
+  </section>
+
+  <!-- Task 6: Form Validation -->
+  <section class="section" id="formSection" style="background:var(--clr-surface);">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <span class="badge-task">Task 6</span>
+        <div class="section-label" style="margin:0 auto 8px;">Form Validation</div>
+        <h2 class="section-title">Smart forms that guide you.</h2>
+        <p class="section-desc" style="margin:0 auto 40px;">Real-time client-side validation — no page reload.</p>
+      </div>
+      <div class="form-wrapper reveal">
+        <div class="card-custom">
+          <div class="form-row">
+            <div class="form-group-custom">
+              <label class="form-label-custom" for="firstName">First Name</label>
+              <input type="text" class="form-input-custom" id="firstName" placeholder="John"
+                oninput="validateField(this,/^[A-Za-z]{2,}$/,'Min 2 letters, alphabets only')"/>
+              <div class="feedback-msg" id="firstNameFeedback"></div>
+            </div>
+            <div class="form-group-custom">
+              <label class="form-label-custom" for="lastName">Last Name</label>
+              <input type="text" class="form-input-custom" id="lastName" placeholder="Doe"
+                oninput="validateField(this,/^[A-Za-z]{2,}$/,'Min 2 letters, alphabets only')"/>
+              <div class="feedback-msg" id="lastNameFeedback"></div>
+            </div>
+          </div>
+          <div class="form-group-custom">
+            <label class="form-label-custom" for="emailField">Email Address</label>
+            <input type="email" class="form-input-custom" id="emailField" placeholder="john@example.com"
+              oninput="validateField(this,/^[^\s@]+@[^\s@]+\.[^\s@]+$/,'Enter a valid email')"/>
+            <div class="feedback-msg" id="emailFieldFeedback"></div>
+          </div>
+          <div class="form-group-custom">
+            <label class="form-label-custom" for="phoneField">Phone Number</label>
+            <input type="tel" class="form-input-custom" id="phoneField" placeholder="+91 98765 43210"
+              oninput="validateField(this,/^[\+]?[\d\s\-]{10,15}$/,'Valid phone number required')"/>
+            <div class="feedback-msg" id="phoneFieldFeedback"></div>
+          </div>
+          <div class="form-group-custom">
+            <label class="form-label-custom" for="roleField">Internship Domain</label>
+            <select class="form-select-custom" id="roleField" onchange="validateSelect(this)">
+              <option value="">— Select domain —</option>
+              <option value="frontend">Frontend Development</option>
+              <option value="backend">Backend Development</option>
+              <option value="data">Data Science / ML</option>
+              <option value="design">UI/UX Design</option>
+            </select>
+            <div class="feedback-msg" id="roleFieldFeedback"></div>
+          </div>
+          <div class="form-group-custom">
+            <label class="form-label-custom" for="passwordField">Password</label>
+            <input type="password" class="form-input-custom" id="passwordField" placeholder="Create a strong password"
+              oninput="checkPasswordStrength(this)"/>
+            <div class="password-strength"><div class="password-strength-bar" id="strengthBar"></div></div>
+            <div class="strength-label" id="strengthLabel">Strength: —</div>
+            <div class="feedback-msg" id="passwordFieldFeedback"></div>
+          </div>
+          <div class="form-group-custom">
+            <label class="form-label-custom" for="confirmPassword">Confirm Password</label>
+            <input type="password" class="form-input-custom" id="confirmPassword" placeholder="Repeat password"
+              oninput="validateConfirmPassword(this)"/>
+            <div class="feedback-msg" id="confirmPasswordFeedback"></div>
+          </div>
+          <div class="form-group-custom">
+            <div class="form-check-custom">
+              <input type="checkbox" id="agreeTerms"/>
+              <label class="form-check-label" for="agreeTerms">
+                I agree to the <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a>.
+              </label>
+            </div>
+            <div class="feedback-msg" id="agreeTermsFeedback"></div>
+          </div>
+          <button class="btn-primary-custom" style="width:100%;justify-content:center;padding:16px;" onclick="submitForm()">
+            Submit Application →
+          </button>
+          <div class="success-toast" id="successToast">
+            <h4>🎉 Application Submitted!</h4>
+            <p>Thank you for applying to Cognifyz Technologies!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-brand">Cogni<span>fyz</span></div>
+      <ul class="footer-links">
+        <li><a href="https://cognifyz.com" target="_blank">Website</a></li>
+        <li><a href="mailto:cognifyztechnologies@gmail.com">Email</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+      <p>Built for Cognifyz Front-End Development Internship</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
